@@ -1,4 +1,3 @@
-body { background-color: gray; color: white; }
+body { background-color: var(--GrayJC); color: white; }
 .netflixlogo { color: red; font-size: xx-large; }
 .bg-black { background-color: black; }
-.courriel { width: 444px; }

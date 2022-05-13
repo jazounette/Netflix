@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --GrayJC: #2e2d2a;
+}

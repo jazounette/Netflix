@@ -1,15 +1,17 @@
 import React from 'react';
-// import Navabara from '../composants/Navabara';
+import { useLocation } from 'react-router-dom';
 
-const About = () => {
+const Inscription = () => {
+    const location = useLocation();
+
     return (
         <div>
             <p>remplacer ici la page pour les inscription (simon et tekra)</p>
-            {/* <Navabara/> */}
+            <p>courriel: {location.state.lecouriel}</p>
         </div>
     );
 };
 
-export default About;
+export default Inscription;
 
 
