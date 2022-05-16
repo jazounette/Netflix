@@ -19,12 +19,12 @@ const Maison = () => {
         <div className='container-fluid'>
             <div className='row entête bg-black'>
                 <div className='imagàmoi'></div>
-                    <div className='col-1 netflixlogo toto'>NETFLIX</div>
+                    <div className='col-1 netflixlogo zind-2'>NETFLIX</div>
                     <div className='col-10'></div>
-                    <div className='col-1 toto'>
-                        <button className='btn btn-danger' onClick={quikaclick}>S'identifier</button>
+                    <div className='col-1 zind-2'>
+                        <button className='btn btn-danger mt-4' onClick={quikaclick}>S'identifier</button>
                     </div>
-                    <div className='col-12 toto'>
+                    <div className='col-12 zind-2'>
                         <h1>Films, séries TV et bien plus en illimité.</h1>
                         <p>Où que vous soyez. Annulez à tout moment.</p>
                         <Commencer/>

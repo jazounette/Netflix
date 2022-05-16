@@ -13,6 +13,7 @@ body { background-color: var(--GrayJC); color: white; }
     z-index: 1;
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/2511884e-66fd-4861-9328-cc93869aae85/FR-fr-20220509-popsignuptwoweeks-perspective_alpha_website_small.jpg) }
 
-.toto { z-index: 2; }
+.zind-2 { z-index: 2; }
+.zind-4 { z-index: 4; }
 
     

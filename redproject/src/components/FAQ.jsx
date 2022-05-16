@@ -13,7 +13,7 @@ const FAQ = () => {
 
 
     return (
-        <Accordion defaultActiveKey="0">
+        <Accordion>
           {FACul.map((val, clé) => (
             <Accordion.Item eventKey={val.id} key={clé}>
               <Accordion.Header>{val.quest}</Accordion.Header>
@@ -27,3 +27,4 @@ const FAQ = () => {
 export default FAQ;
 
 
+// defaultActiveKey="0"

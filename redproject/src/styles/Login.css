@@ -1,2 +1,6 @@
 .aligneG { text-align: left; }
-.titi { width: 100%; }
+.aligneD { text-align: right; }
+.w100p { width: 100%; }
+.fondLogin { background-color: black; height: 333px; }
+.sépar-100px { height: 100px; }
+.text-bold { font-weight: bold; }
