@@ -1,0 +1,18 @@
+body { background-color: var(--GrayJC); color: white; }
+.netflixlogo { color: red; font-size: 7vh; font-weight:bold; }
+.bg-black { background-color: black; }
+
+.entête { height: 100vh; }
+.imagàmoi { height: 100vh;
+    position: absolute;
+    /* left:0; top:0; */
+    background-size: cover;
+    /* min-height: 768px;
+    width: 100%; */
+    opacity: 0.5;
+    z-index: 1;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ebff1e0f-5704-423f-b4c6-94914dabe25b/2511884e-66fd-4861-9328-cc93869aae85/FR-fr-20220509-popsignuptwoweeks-perspective_alpha_website_small.jpg) }
+
+.toto { z-index: 2; }
+
+    
