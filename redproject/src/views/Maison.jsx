@@ -7,9 +7,9 @@ import Commencer from '../components/Commencer';
 import FAQ from '../components/FAQ';
 
 const Maison = () => {
-    const blockz = [ { titre:"Regardez Netflix sur votre TV.", describ: "Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-ray et bien plus.", image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png", vidéo: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v", ordre: true },
+    const blockz = [ { titre:"Regardez Netflix sur votre TV.", describ: "Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-ray et bien plus.", image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png", vidéo: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v", vidlarg: 70, vidtop: 22, ordre: true },
                      { titre:"Téléchargez vos séries préférées pour les regarder hors connexion.", describ: "Enregistrez vos programmes préférés et ayez toujours quelque chose à regarder.", image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg", vidéo: "", ordre: false },
-                     { titre:"Où que vous soyez.", describ: "Regardez des films et séries TV en accès illimité sur votre TV, smartphone, tablette et ordinateur, tout compris.", image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png", vidéo: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v", ordre: true },
+                     { titre:"Où que vous soyez.", describ: "Regardez des films et séries TV en accès illimité sur votre TV, smartphone, tablette et ordinateur, tout compris.", image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png", vidéo: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v", vidlarg: 60, vidtop: 12, ordre: true },
                      { titre:"Créez des profils pour les enfants.", describ: "Les enfants découvrent de nouvelles aventures et retrouvent leurs personnages préférés dans un espace bien à eux, déjà inclus dans votre abonnement.", image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/kidsValueProp.png", vidéo: "", ordre: false }  ]
     const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ const Maison = () => {
                     </div>
             </div>
 
-            {blockz.map((val, key) => <PromoBlock key={key} titre={val.titre} describ={val.describ} ordre={val.ordre} image={val.image} vidéo={val.vidéo}/> )}
+            {blockz.map((val, key) => <PromoBlock key={key} titre={val.titre} describ={val.describ} ordre={val.ordre} image={val.image} vidurl={val.vidéo} vidlarg={val.vidlarg} vidtop={val.vidtop}/> )}
 
             <div className='row bg-black mt-2'>
                 <h1 className='mt-5'>Foire aux questions</h1>

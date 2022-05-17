@@ -1,3 +1,11 @@
 .wrapper { position: relative; }
-.vidéoàmoi { position: absolute; left: 90px; top: 100px; }
+.vidéoàmoi { 
+    position: absolute; 
+    /* left: 20%; */
+    /* top: 12%; */
+    /* width: 60%; */
+    height: auto;
+}
 .imageCadre { z-index: 2; position: relative; }
+
+

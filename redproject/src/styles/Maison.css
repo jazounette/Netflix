@@ -16,4 +16,5 @@ body { background-color: var(--GrayJC); color: white; }
 .zind-2 { z-index: 2; }
 .zind-4 { z-index: 4; }
 
-    
+.btn-danger { background-color: red; }
+.btn-danger:hover { background-color: darkred; }
