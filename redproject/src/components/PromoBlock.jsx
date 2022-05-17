@@ -1,10 +1,10 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import '../styles/PromoBlock.css';
 
-const PromoBlock = ( { titre, describ, image, ordre, vidéo } ) => {
+const PromoBlock = ( { titre, describ, image, ordre, vidurl, vidlarg, vidtop } ) => {
     //const vidRef = useRef(null);
-
-    console.log (vidéo);
+    // console.log (vidurl);
+    var vidleffe = ((100-vidlarg)/2);
     
     function prout (toto){  return (toto) ? "col-md-5 offset-md-1 order-1" : "col-md-5 order-2";  }
     function yavidoupas (toto) { return (toto === "") ? "d-none" : "vidéoàmoi"; }
@@ -17,8 +17,8 @@ const PromoBlock = ( { titre, describ, image, ordre, vidéo } ) => {
             </div>
             <div className={prout(!ordre)}>
                 <div className='wrapper'>
-                    <video className={yavidoupas(vidéo)} width="444" controls muted loop autoPlay>
-                        <source src={vidéo} type="video/mp4"/>
+                    <video className={yavidoupas(vidurl)} style={{width: vidlarg+'%', top: vidtop+'%', left: vidleffe+'%'}} controls muted loop autoPlay>
+                        <source src={vidurl} type="video/mp4"/>
                     </video>
                     <img className='img-fluid imageCadre' src={image} alt="netflixestvotreamisdonnerargentànetflix"></img>
                 </div>
