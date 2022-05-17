@@ -1,6 +1,8 @@
 body { background-color: var(--GrayJC); color: white; }
-.netflixlogo { color: red; font-size: 7vh; font-weight:bold; }
+/* .netflixlogo { color: red; font-size: 7vh; font-weight:bold; } */
+.netflixlogo { width: 222px; z-index: 2; }
 .bg-black { background-color: black; }
+.text-red { color: red; }
 
 .entête { height: 100vh; }
 .imagàmoi { height: 100vh;
