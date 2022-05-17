@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\tory\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tory\\.nuget\\packages"
+    ]
+  }
+}
