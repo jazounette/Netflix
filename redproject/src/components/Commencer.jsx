@@ -8,7 +8,10 @@ const Commencer = () => {
     const navigate = useNavigate();
 
     function GérageCourielChange(e){  lecouriel = e.target.value }
-    function quikaclick(){  navigate('/inscription', { state: {lecouriel:lecouriel} } );  }
+    function quikaclick(){  
+        // navigate('/inscription', { state: {lecouriel:lecouriel} } );
+        navigate('/etape1', { state: {lecouriel:lecouriel} } );
+    }
 
     return (
     <div>
@@ -20,7 +23,7 @@ const Commencer = () => {
                     {/* <small id="emailHelp" class="form-text text-muted">L'e-mail est obligatoire!</small> */}
                 </div>
                 <div>
-                    <button className='btn btn-danger' onClick={quikaclick}>Commencer</button>
+                    <button className='btn btn-danger' onClick={quikaclick}>Commencer &#62;</button>
                 </div>
             </div>
         </form>

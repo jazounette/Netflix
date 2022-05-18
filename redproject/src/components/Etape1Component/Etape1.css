@@ -1,0 +1,23 @@
+.fondblanc { background-color: white; color: black; }
+
+.card-center{
+   position: static;
+    text-align: left;  
+}
+.card-titre{
+    position: static;
+    color:black;
+    text-align: center;  
+}
+.buttonTheckra{
+    width:440px;
+    height: 64px;
+    color:#FFF;
+    background-color:#E50914;
+    padding: 12px 25px;
+    border-radius: 4px;
+    min-height: 64px;
+    font-weight: 500;
+    font-size: 18px;
+  
+  }

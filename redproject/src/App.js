@@ -5,6 +5,8 @@ import './App.css';
 import Inscription from './views/Inscription';
 import Maison from './views/Maison';
 import Login from './views/Login';
+import Etape1 from './components/Etape1Component/Etape1';
+import Etape2 from './components/Etape2Component/Etape2';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<Maison/>}/>
           <Route path="/inscription" element={<Inscription/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/etape1" element={<Etape1/>}/>
+          <Route path="/etape2" element={<Etape2/>}/>
           <Route path="/*" element={<Maison/>}/>
         </Routes>
     </BrowserRouter>

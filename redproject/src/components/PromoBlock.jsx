@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/PromoBlock.css';
+import Downloading from './Downloading';
 
-const PromoBlock = ( { titre, describ, image, ordre, vidurl, vidlarg, vidtop } ) => {
+const PromoBlock = ( { titre, describ, image, ordre, vidurl, vidlarg, vidtop, dlboule } ) => {
     //const vidRef = useRef(null);
     // console.log (vidurl);
     var vidleffe = ((100-vidlarg)/2);
@@ -20,6 +21,9 @@ const PromoBlock = ( { titre, describ, image, ordre, vidurl, vidlarg, vidtop } )
                     <video className={yavidoupas(vidurl)} style={{width: vidlarg+'%', top: vidtop+'%', left: vidleffe+'%'}} controls muted loop autoPlay>
                         <source src={vidurl} type="video/mp4"/>
                     </video>
+                    <div className='downloading'>
+                        { (dlboule) ? <Downloading/> : "" }
+                    </div>
                     <img className='img-fluid imageCadre' src={image} alt="netflixestvotreamisdonnerargentànetflix"></img>
                 </div>
             </div>

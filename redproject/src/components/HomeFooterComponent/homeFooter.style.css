@@ -1,0 +1,32 @@
+.homeFooter{
+    background-color: #000;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.pSimon {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+.spanParagr{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    color: #757575;
+    font-size: 16px;
+}
+.footElements{
+    text-align: left;
+    max-width: 50%;
+    margin: 0 auto;
+   
+}
+.monTableau{
+    text-align: left;
+    text-decoration: none;
+   
+    font-size: 13px;
+}
+.trSimon{
+    padding: 0 auto;
+}

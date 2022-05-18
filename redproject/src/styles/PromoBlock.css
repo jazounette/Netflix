@@ -8,4 +8,4 @@
 }
 .imageCadre { z-index: 2; position: relative; }
 
-
+.downloading { z-index: 4; position: absolute; width: 60%; top:72%; left:20%; }
