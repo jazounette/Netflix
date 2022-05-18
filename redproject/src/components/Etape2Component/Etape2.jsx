@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 
 const Etape2=()=>{
     const navigate = useNavigate();
-    function quickClick(){navigate('/etape3'); }
+    function quickClick(){navigate('/Forfaits'); }
 
     return (
         <div className='fondblanc img'>
