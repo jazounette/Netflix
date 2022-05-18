@@ -5,6 +5,9 @@ import './App.css';
 import Inscription from './views/Inscription';
 import Maison from './views/Maison';
 import Login from './views/Login';
+import AccueilRessource from './views/AccueilRessource/AccueilRessourceComponent';
+import Carrousel from './components/Carrousel/CarrouselComponent';
+
 
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
           <Route path="/" element={<Maison/>}/>
           <Route path="/inscription" element={<Inscription/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/Accueil" element={<AccueilRessource/>}/>
+          <Route path="/Carrou" element={<Carrousel/>}/>
+
           <Route path="/*" element={<Maison/>}/>
         </Routes>
     </BrowserRouter>

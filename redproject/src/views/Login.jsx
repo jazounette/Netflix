@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import '../styles/Maison.css';
 import '../styles/Login.css';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { post } from '../service/ApiNetflix';
 
 
 const Login = () => {
@@ -18,13 +19,32 @@ const Login = () => {
     var [motdepass, setMotdepass] = useState();
     var [lechuck, setLechuck] = useState();
     var [learnMore, setLearnMore] = useState();
-
+   
+  
     const navigate = useNavigate();
 
     function GérageCourielChange(e){  lecouriel = e.target.value }
     function GérageMDPChange(e){  motdepass = e.target.value }
     function GérageCheckage(e){  motdepass = e.target.checked }
-    function quikaclick(){  navigate('/maison');  }
+    function quikaclick(){  
+       
+          }
+        function Sub(e){
+            e.preventDefault();
+            post( "login" ,{
+                pass : motdepass,
+                email:lecouriel
+        }).then((res)=>{ 
+            if(res.data.error==false){
+                console.log(res.data);
+                navigate('/Accueil');
+           }else{
+               navigate('/maison')
+           }
+         });
+        
+        }
+       
     function learnMoreClick(){ setLearnMore(true);  }
 
     return (
@@ -35,7 +55,7 @@ const Login = () => {
                 <div className='col-11'></div>
                 <div className='col-md-4 offset-md-4 p-5 bg-black aligneG zind-2'>
                     <h1 className='mb-5'>Sign In</h1>
-                    <form>
+                    <form onSubmit={Sub}>
                         <input type="email" className="form-control mb-3" aria-describedby="emailHelp" placeholder="eMail or phone number" value={lecouriel} onChange={GérageCourielChange}></input>
                         {/* <small id="emailHelp" class="form-text text-muted">L'e-mail est obligatoire!</small> */}
 
@@ -43,7 +63,7 @@ const Login = () => {
                         {/* <small id="passHelp" class="form-text text-muted">L'e-mail est obligatoire!</small> */}
 
                         <button className='btn btn-danger w100p mb-2' onClick={quikaclick}>Sign In</button>
-
+                    </form>
                         <div className='row'>
                             <div className='col-6'>
                             <div className="form-check">
@@ -58,7 +78,7 @@ const Login = () => {
                         <div className='col-12 text-secondary'>This page is protected by Google reCAPTCHA to ensure youre not a bot.&nbsp;
                             { learnMore ? <LearnMore/> : <LearnMoreLien/> }
                         </div>
-                    </form>
+                    
                 </div>
             </div>
 
