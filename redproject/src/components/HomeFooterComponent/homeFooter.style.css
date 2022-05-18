@@ -2,7 +2,11 @@
     background-color: #000;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
+<<<<<<< HEAD
 .pSimon {
+=======
+ p {
+>>>>>>> aab87183dae20bd80afc07b2bdf92cda833ef9a9
     margin-bottom: 0px;
     padding-left: 0px;
     font-weight: bold;
@@ -27,6 +31,13 @@
    
     font-size: 13px;
 }
+<<<<<<< HEAD
 .trSimon{
     padding: 0 auto;
 }
+=======
+tr{
+    padding: 0 auto;
+}
+
+>>>>>>> aab87183dae20bd80afc07b2bdf92cda833ef9a9

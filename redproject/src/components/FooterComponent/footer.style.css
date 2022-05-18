@@ -1,0 +1,46 @@
+.footer{
+    width: 100%;
+    height: 213px;
+    background-color: #F3F3F3;
+    padding: 0 0 0 20
+}
+.footerTop{
+    width: 1367px;
+    height: 20px;
+    font-size: 16px;
+    color: "Helvetica Neue, Helvetica";
+    margin: 0 0 30;
+}
+.footerBottom{
+    display: flex;
+    justify-content: space-around;
+    color:#757575;
+    font-size: 13px;
+}
+.itemSpan{
+    width: 26px;
+    height: 16px;
+    font-size: 13px;
+    color: Helvetica;
+}
+.itemCentral1{
+    width: 78px;
+    height: 16px;
+    font-size: 13px;
+
+}
+.itemCentral2{
+    width: 99px;
+    height: 16px;
+    font-size: 13px;
+}
+.itemAntipenult{
+    width: 132px;
+    height: 16px;
+    font-size: 13px;
+}
+.itemLast{
+    width: 84px;
+    height: 16;
+    font-size: 13px;
+}
