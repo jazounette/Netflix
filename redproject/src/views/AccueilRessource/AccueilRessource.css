@@ -1,0 +1,43 @@
+
+.Entete{
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(90deg, #2e2d2a 45%, transparent);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* background-image: url('../../../public/img/Dunkerque.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+.Entete article, .Entete img{
+width: 50%;
+height: 105%;
+}
+.fond{
+    background-image: url('../../../public/img/Dunkerque.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 116%;
+    position:absolute;
+}
+.degrade{
+    z-index: 1;
+    width: 100%;
+    height: 116%;
+    position:absolute;
+    background: linear-gradient(90deg, #2e2d2a 45%, transparent);
+}
+.Entete article{
+    z-index: 2;
+    color: white;
+    text-align: left;
+}
+.Entete article div{
+    width:60%;
+    margin: 5% 20%;
+}
+.bottomSpace{
+    margin-bottom: 5%;
+}

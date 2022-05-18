@@ -8,6 +8,9 @@ import Login from './views/Login';
 import Etape1 from './components/Etape1Component/Etape1';
 import Etape2 from './components/Etape2Component/Etape2';
 // import Forfaits from './components/ForfaitsComponent/Forfaits';
+import AccueilRessource from './views/AccueilRessource/AccueilRessourceComponent';
+import Carrousel from './components/Carrousel/CarrouselComponent';
+
 
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
           <Route path="/etape1" element={<Etape1/>}/>
           <Route path="/etape2" element={<Etape2/>}/>
           {/* <Route path="/forfaits" element={<Forfaits/>}/> */}
+          <Route path="/Accueil" element={<AccueilRessource/>}/>
+          <Route path="/Carrou" element={<Carrousel/>}/>
+
           <Route path="/*" element={<Maison/>}/>
         </Routes>
     </BrowserRouter>
