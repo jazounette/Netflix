@@ -36,7 +36,8 @@ const Etape1=()=>{
     
             <div>
             <input type="text" name="mdp" placeholder="Entrez votre mot de passe"  style={{width: "250px"}}></input>
-            <p style={{color: "blue"}}>Mot de passe oublié?</p>
+            {/* <p style={{color: "blue"}}>Mot de passe oublié?</p> */}
+            <p style={{color: "blue"}}><a href="https://www.netflix.com/fr/LoginHelp" className="suivant btn btn-danger btn-lg btn-block">Mot de passe oublié?</a></p>
             </div>
            
         <div className='button'>  

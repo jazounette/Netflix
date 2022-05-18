@@ -6,10 +6,10 @@ import HomeFooter from '../components/HomeFooterComponent/HomeFooter';
 
 const Login = () => {
     const LearnMore = () => { return (
-        <div className='col-12 text-secondary'>The information collected by Google reCAPTCHA is subject to the Google <a target="_blank" href="https://policies.google.com/privacy">Privacy Policy</a> and <a target="_blank" href="https://policies.google.com/terms">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google).</div>
+        <div className='col-12 text-secondary'><small>The information collected by Google reCAPTCHA is subject to the Google <a target="_blank" href="https://policies.google.com/privacy">Privacy Policy</a> and <a target="_blank" href="https://policies.google.com/terms">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google).</small></div>
     )}
     const LearnMoreLien = () => { return ( <>
-            <a href='#dummymoure' onClick={learnMoreClick}>Learn more.</a>
+            <a href='#dummymoure' onClick={learnMoreClick}><small>Learn more.</small></a>
             <div className='sépar-100px'></div>
         </> )}
 
@@ -59,8 +59,8 @@ const Login = () => {
                             <div className='col-6 aligneD'><a href="https://www.netflix.com/fr/LoginHelp">Need help?</a></div>
                         </div>
                         <div className='sépar-100px'></div>
-                        <div className='col-12 text-secondary'>New to Netflix? <NavLink className="text-bold" to ="/maison">Sign up now.</NavLink></div>
-                        <div className='col-12 text-secondary'>This page is protected by Google reCAPTCHA to ensure youre not a bot.&nbsp;
+                        <div className='col-12 text-secondary'><small>New to Netflix? <NavLink className="text-bold" to ="/maison">Sign up now.</NavLink></small></div>
+                        <div className='col-12 text-secondary'><small>This page is protected by Google reCAPTCHA to ensure youre not a bot.&nbsp;</small>
                             { learnMore ? <LearnMore/> : <LearnMoreLien/> }
                         </div>
                     </form>
