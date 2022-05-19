@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {useState} from 'react';
 import './forfaits.style.css';
+import Footer from '../FooterComponent/Footer';
 
 
 export default function Forfaits () {
@@ -189,6 +190,7 @@ avec le forfait Essentiel.
 {/*<button type="submit" className="suivant btn btn-danger btn-lg btn-block" onClick={GoToModePaiement}>Suivant</button>*/}
 
 </div>
+<Footer />
 
  </div>
 );
