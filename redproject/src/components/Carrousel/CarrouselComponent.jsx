@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './Carrousel.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 const Carrousel = (props) => {
     var[InitLoad,setInitLoad]=useState(true);
     var [indexCarrou,setIndexCarrou]=useState(0);
     var [list,setlist]=useState([]);
-   
+   const navigate=useNavigate();
     useEffect(()=>{
        setlist([...props.ListRessource.slice(indexCarrou*5,(indexCarrou+1)*5)]);       
     },[InitLoad]);
@@ -48,14 +49,18 @@ function Prev(){
     //         list=[...props.ListRessource.slice(indexCarrou*5,(indexCarrou+1)*5)];
     }
 } ;
-
+function Detail(data){
+    console.log("bordel")
+        navigate('/DetailRessource',{ state: data})
+}
+ 
     return (
         <div className='CarrouselElt'>
             <h3 className="CarrouTitle">{props.title}</h3>
             <div className='CarrouselContainer'>
                 {[...list].map((elt,index)=>{              
-                return(<div className='Ressource' key={index} >
-                    <img src={elt.image[0]} width="100%" height="100%"/>
+                return(<div className='Ressource' key={index}  >
+                    <img src={elt.image[0]} width="100%" height="100%" onClick={Detail(elt)}/>
                     <div className='hoverFilm'>                       
                         <h3>{elt.nomRessource}</h3>
                         <p>{elt.description}</p>
@@ -69,6 +74,7 @@ function Prev(){
             <button className='Next' onClick={Next}>
                 <FontAwesomeIcon icon={faChevronRight}/>
             </button>
+
         </div>
     );
 };

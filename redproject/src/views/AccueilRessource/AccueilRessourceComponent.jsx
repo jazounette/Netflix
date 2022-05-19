@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Carrousel from '../../components/Carrousel/CarrouselComponent';
-
+import Footer from "../../components/FooterComponent/Footer"
 import { get } from '../../service/ApiNetflix';
 import './AccueilRessource.css'
 const AccueilRessource = () => {
@@ -40,7 +40,7 @@ const AccueilRessource = () => {
              <Carrousel  ListRessource={listHorreur} title="Horreur" /> 
              <Carrousel ListRessource={listSF}  title="SF"/> 
              <Carrousel ListRessource={listAction}  title="Action"/> 
-                     
+                 <Footer/>    
         </div>
     );
 };

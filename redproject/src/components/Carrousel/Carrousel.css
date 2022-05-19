@@ -3,14 +3,14 @@
     height: 25vh;
     position: relative;  
     z-index: 5;
-    
+    margin-bottom: 3%;
 }
-.CarrouselElt:hover{
+/* .CarrouselElt:hover{
     width: 100%;
     height: 35vh;
     position: relative;  
     z-index: 5;
-}
+} */
 .CarrouselElt:nth-child(0){
     margin-top:25px;
 }
@@ -22,9 +22,10 @@
 .CarrouselElt button{
     border: none;
     background-color: transparent;
+    z-index: 100;
 }
 .CarrouselContainer{
-    width: 90%;
+    width: 80%;
    
     display:flex;
     flex-direction: row;
@@ -71,7 +72,7 @@
       
       position: absolute;
       width: 100%;    
-    top:0;
+      top:0;
      height: 100%;
      color:White;
      background-color: rgba(128, 128, 128, 0.426);
