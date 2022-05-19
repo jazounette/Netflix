@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {useState} from 'react';
 import './forfaits.style.css';
+import Footer from '../FooterComponent/Footer';
+//import ForfaitHeader from '../ForfaitHeaderComponent/ForfaitHeader';
 
 
 export default function Forfaits () {
@@ -44,7 +46,7 @@ export default function Forfaits () {
     setStyleFleche2("styleValeursA");
     setStyleFleche3("styleValeursB");
   };
-
+   
 
 const navigate = useNavigate();
 function GoToModePaiement(){
@@ -62,6 +64,7 @@ navigate('/ModeDePaiement');
 
 return (
 <div className='fondblanc'>
+{/*<ForfaitHeader />*/}
 <div className="monTableau">
 
           <table className="table">
@@ -189,7 +192,7 @@ avec le forfait Essentiel.
 {/*<button type="submit" className="suivant btn btn-danger btn-lg btn-block" onClick={GoToModePaiement}>Suivant</button>*/}
 
 </div>
-
+<Footer />
  </div>
 );
 };

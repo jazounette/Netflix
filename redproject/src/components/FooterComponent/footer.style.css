@@ -1,46 +1,94 @@
+.footElements{
+  width: 100%;
+  margin-left: 5px;
+  padding: 20px;
+}
+.LienA{
+    text-decoration:none ;
+}
+.liste .lienA{
+    text-decoration: none;
+    list-style: none;
+    padding: 0 20px 0 20;
+  }
 .footer{
     width: 100%;
-    height: 213px;
+    height: 180px;
     background-color: #F3F3F3;
-    padding: 0 0 0 20
-}
-.footerTop{
-    width: 1367px;
-    height: 20px;
-    font-size: 16px;
-    color: "Helvetica Neue, Helvetica";
-    margin: 0 0 30;
-}
-.footerBottom{
-    display: flex;
-    justify-content: space-around;
+    padding: 0 10px 0 20;
+    margin-top: 40px;
+    font-size: 0.7rem;
     color:#757575;
-    font-size: 13px;
 }
-.itemSpan{
-    width: 26px;
-    height: 16px;
-    font-size: 13px;
-    color: Helvetica;
-}
-.itemCentral1{
-    width: 78px;
-    height: 16px;
-    font-size: 13px;
+.footerTop .lienA, .itemSpan1 .lienA, .itemSpan2 .lienA, .itemCentral1 .lienA, .itemCentral2 .lienA, .itemAntipenult1 .lienA, .itemLast .lienA{
+    text-decoration: none;
+    color:#757575;
+    font-size: 0.8rem;
+    padding: 0 20px 0 20;
 
 }
-.itemCentral2{
-    width: 99px;
+.footerTop{
+    margin-left: 63px;
+    font-weight: bold;
+    
+    opacity: .7;
+}
+
+.footerTop .paragr{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+   font-weight: bold;
+   height: 20px;
+   text-align: left;
+   margin-bottom: 30px;
+   margin-left: 0px;
+   color:#757575;
+   padding: 0 15px 0 ;
+   font-size: 1rem;
+   
+}
+.footerBottom{
+    width: 80%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    margin: 10px 30px 0px 50px;
+    padding: 0 10px 0 20;
+    opacity: .5;
+    
+}
+.itemSpanCond{
+    padding: 5px;
+}
+
+
+.itemSpan1 {
+    
+    margin-left: 30px;
+    padding: 0 10px 0 20;
+}
+.itemSpan2{
+    margin-left: 60px;
+    padding: 0 10px 0 20;
+}
+.itemAntipenult1{
+    margin-left: 60px;
+
+}
+.itemCentral1{
+    width: 100px;
     height: 16px;
-    font-size: 13px;
+    padding: 0 10px 0 20;
+    margin-bottom: 30px;
+    font-size: 0.7rem;
 }
-.itemAntipenult{
-    width: 132px;
+
+
+.itemAntipenult1{
+    width: 90px;
     height: 16px;
-    font-size: 13px;
+    font-size: 0.7rem;
+    padding: 0 10px 0 20;
+   
 }
-.itemLast{
-    width: 84px;
-    height: 16;
-    font-size: 13px;
-}
+
