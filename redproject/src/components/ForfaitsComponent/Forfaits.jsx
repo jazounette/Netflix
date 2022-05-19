@@ -61,7 +61,7 @@ navigate('/ModeDePaiement');
 
 
 return (
-<div>
+<div className='fondblanc'>
 <div className="monTableau">
 
           <table className="table">
