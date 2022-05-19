@@ -1,8 +1,6 @@
-
-.fondblanc { background-color: white; color: black; 
-}
 .styleValeurs1 {  
   opacity: .6; 
+  
 }
 
 .styleValeurs2 {
@@ -18,34 +16,15 @@
   display: inline;
 }
 
-
-
-
-*{
-  box-sizing: border-box;
-}
-header{
-  width: 100%;
-  height: 90px;
-  margin-bottom:40px;
-  border: 1px solid black;
-}
-.main{
-  width: 85%;
-  margin: 0 auto;
-}
-section{
-  margin: 0 15% 0 20%;
-}
 .top{
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
-li{
+/*li{
   text-decoration: none;
   list-style: none;
-}
+}*/
 .appName{
   font-size: 2.5rem;
   font-weight: bold;
@@ -58,7 +37,7 @@ li{
   background-color:#FFF;
   padding: 0 0 95;
 }
-main{
+/*main{
   max-width: 978px;
   height: 50%;
   box-sizing: border-box;
@@ -66,7 +45,7 @@ main{
 
   top: 0;
 
-}
+}*/
 .etapeforfait{
   font-weight: bold;
 }
@@ -135,15 +114,15 @@ main{
   margin-top: -1px;
 }
 .arrow-down1{
-  margin-left: 42%;
+  margin-left: 46%;
 }
 .arrow-down2{
 
-  margin-left: 42%;
+  margin-left: 46%;
 }
 .arrow-down3{
 
-  margin-left: 42%;
+  margin-left: 46%;
 }
 
 
@@ -159,7 +138,7 @@ main{
   margin-top: 0%;
   padding:0% 10%;
 }
-td{
+.tdClass{
   text-align: center;
 }
 .fleche{
@@ -204,14 +183,14 @@ td{
     font-weight: 500;
     font-size: 24px;
 }
-a{
+.lienA{
     text-decoration:none ;
 }
-li{
+/*.list{
     text-decoration: none;
     list-style: none;
-  }
-footer{
+  }*/
+.footerClass{
     width: 100%;
     height: 180px;
     background-color: #F3F3F3;

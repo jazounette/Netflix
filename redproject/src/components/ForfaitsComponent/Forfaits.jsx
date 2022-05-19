@@ -30,7 +30,7 @@ export default function Forfaits () {
 
     setStyleFleche1("styleValeursA");
     setStyleFleche2("styleValeursB");
-    setStyleFleche3("styleValeursA");
+    setStyleFleche3("styleValeursA ");
   };
 
   const [style3, setStyle3] = useState("styleValeurs1");
@@ -68,9 +68,9 @@ return (
 
                   <tbody>
                         <tr>
-                            <td></td>
+                            <td className='tdClass'></td>
 
-                            <td>
+                            <td className='tdClass'>
                              <div className='monBlock'>
                                 <button className={style1} onClick={changeStyle1}>
                                   
@@ -82,14 +82,14 @@ return (
                                     </div>
                                  {/*   <div className="arrow-down1" width={19} height={14} opacity= {0.6}></div>*/}
                                 </button>
-                                <div className={ styleFleche1}>
+                                <div className={styleFleche1}>
                                 <div className="arrow-down1 " ></div> 
                                 </div>
                               </div>
                             </td>
 
                             
-                            <td>
+                            <td className='tdClass'>
                             <div className='monBlock'>
                                 <button className={style2} onClick={changeStyle2}>
                                 <div className="card monForfait standard text-white bg-danger mw-100 w-100">
@@ -106,7 +106,7 @@ return (
                                 </div>
                             </td>
                             
-                            <td>
+                            <td className='tdClass'>
                             <div className='monBlock'>
                                 <button className={style3} onClick={changeStyle3}>
                                 <div className="card monForfait premium text-white bg-danger mw-100 w-100">
@@ -124,38 +124,38 @@ return (
                             
                         </tr>
                         <tr>
-                            <td className="titre">Abonnement mensuel</td>
-                            <td className={style1}>8,99</td>
-                            <td className={style2}>13,49</td>
-                            <td className={style3}>17,99</td>
+                            <td className="titre tdClass">Abonnement mensuel</td>
+                            <td className={"tdClass " + style1}>8,99</td>
+                            <td className={"tdClass " + style2}>13,49</td>
+                            <td className={"tdClass " + style3}>17,99</td>
                         </tr>
 
                         <tr>
-                            <td className="titre">Qualité video</td>
-                            <td ><span className={style1}>Bonne</span></td>
-                            <td className={style2}>Meilleure</td>
-                            <td className={style3}>Optimale</td>
+                            <td className="titre tdClass">Qualité video</td>
+                            <td className="tdClass"><span className={style1} tdClass>Bonne</span></td>
+                            <td className={"tdClass " + style2}>Meilleure</td>
+                            <td className={"tdClass " + style3}>Optimale</td>
 
                         </tr>
                         <tr>
-                            <td className="titre">Résolution</td>
-                            <td className={style1}>480p</td>
-                            <td className={style2}>1080p</td>
-                            <td className={style3}>4K+HDR</td>
+                            <td className="titre tdClass">Résolution</td>
+                            <td className={"tdClass " + style1}>480p</td>
+                            <td className={"tdClass " + style2}>1080p</td>
+                            <td className={"tdClass " + style3}>4K+HDR</td>
 
                         </tr>
                         <tr>
-                            <td>
+                            <td className="tdClass">
                             Netflix sur votre TV, ordinateur, smartphone et
                             <br /> tablette
                             </td>
-                            <td>
+                            <td className="tdClass">
                             <img src="http://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Checkmark.png" alt="accord" className={style1} width={50} height={50}/>
                             </td>
-                            <td>
+                            <td className="tdClass">
                             <img src="http://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Checkmark.png" alt="accord" className={style2} width={50} height={50}/>
                             </td>
-                            <td className="imgReSized">
+                            <td className="tdClass">
                             <img src="http://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Checkmark.png" alt="accord" className={style3} width={50} height={50}/>
                             </td>
                         </tr>
@@ -169,7 +169,7 @@ et de la HDR dépend de votre connection Internet et des <br />
 capacités de l'appareil. Tous les contenus ne sont pas disponibles
 dans toutes les résolutions. Pour en savoir plus, veuillez consulter
 <br />
-nos <a href="https://help.netflix.com/legal/termsofuse">Conditions d'utilisation</a>
+nos <a className="lienA" href="https://help.netflix.com/legal/termsofuse">Conditions d'utilisation</a>
 
 </p>
 <p className="usersAutorises">
@@ -184,7 +184,7 @@ avec le forfait Essentiel.
 <div className="suivantContainer">
 
 
-<a href="https://www.netflix.com/signup/payment" className="suivant btn btn-danger btn-lg btn-block">Suivant</a>
+<a href="https://www.netflix.com/signup/payment" className="suivant btn btn-danger btn-lg btn-block lienA">Suivant</a>
 
 {/*<button type="submit" className="suivant btn btn-danger btn-lg btn-block" onClick={GoToModePaiement}>Suivant</button>*/}
 
